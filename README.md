@@ -1,10 +1,7 @@
 # Seapay
 
-```
-### add your own gitlab badges here
 [![pipeline status](https://gitlab.com/alexanderv21/seapay-microservice/badges/master/pipeline.svg)](https://gitlab.com/alexanderv21/seapay-microservice/commits/master)
 [![coverage report](https://gitlab.com/alexanderv21/seapay-microservice/badges/master/coverage.svg)](https://gitlab.com/alexanderv21/seapay-microservice/commits/master)
-```
 
 ## Description
 
