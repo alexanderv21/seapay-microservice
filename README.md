@@ -1,10 +1,7 @@
 # Seapay
 
-```
-### add your own gitlab badges here
 [![pipeline status](https://gitlab.com/alexanderv21/seapay-microservice/badges/master/pipeline.svg)](https://gitlab.com/alexanderv21/seapay-microservice/commits/master)
 [![coverage report](https://gitlab.com/alexanderv21/seapay-microservice/badges/master/coverage.svg)](https://gitlab.com/alexanderv21/seapay-microservice/commits/master)
-```
 
 ## Description
 
@@ -39,10 +36,10 @@ The project itself has 4 modules:
 ### How to build
 
 ```bash
-# create db data folder (if not exist)
+# create db data folder
 mkdir -p ./pgdata
 
-# run db on detached docker container
+# run db as detached docker container
 docker-compose -f docker-compose-monolith-staging.yml up db -d
 
 # tail log
@@ -61,7 +58,7 @@ docker-compose -f docker-compose-monolith-staging.yml down
 ### How to run
 
 ```bash
-# to run monolith
+# to run monolith as detached docker container
 docker-compose -f docker-compose-monolith-staging.yml up -d
 
 # tail log
@@ -75,7 +72,7 @@ docker-compose -f docker-compose-monolith-staging.yml down
 ```
 
 ```bash
-# to run microservices
+# to run microservices as detached docker container
 docker-compose -f docker-compose-microservices-staging.yml up -d
 
 # tail log
@@ -85,7 +82,7 @@ docker ps
 docker logs -t -f [container_name]
 
 # to stop
-docker-compose -f docker-compose-microservices-staging.yml down -d
+docker-compose -f docker-compose-microservices-staging.yml down
 ```
 
 ```bash
